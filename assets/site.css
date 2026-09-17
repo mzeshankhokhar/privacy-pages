@@ -53,15 +53,52 @@ html { scroll-behavior: smooth; }
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   color: var(--text);
   background: var(--bg);
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
+  position: relative;
+}
+
+h1, h2, h3, .app-name, .badge, .toc-label {
+  font-family: 'Sora', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
 a { color: var(--primary); text-decoration: none; }
 a:hover { text-decoration: underline; }
+
+/* ---------- Fixed page background (persists across scroll, every page) ---------- */
+.page-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+}
+.page-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 50% -10%, rgba(37, 99, 235, 0.05), transparent 60%);
+}
+
+/* ---------- Gradient heading text ---------- */
+.gradient-text {
+  background: linear-gradient(100deg, var(--text) 10%, var(--primary) 45%, #7C3AED 65%, var(--text) 90%);
+  background-size: 250% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gradientShift 8s ease-in-out infinite;
+}
+@keyframes gradientShift {
+  0%, 100% { background-position: 0% center; }
+  50% { background-position: 100% center; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .gradient-text { animation: none; background-position: 30% center; }
+}
 
 /* ---------- Reading progress bar ---------- */
 .progress-bar {
@@ -90,28 +127,27 @@ a:hover { text-decoration: underline; }
 
 /* ---------- Hero (landing pages) ---------- */
 .hero {
-  position: relative;
-  overflow: hidden;
   padding: 72px 20px 56px;
   text-align: center;
-  isolation: isolate;
 }
-.hero-orbs { position: absolute; inset: 0; z-index: -1; overflow: hidden; }
+
+/* Ambient orbs, fixed to the viewport so they persist as the page scrolls */
 .orb {
   position: absolute;
   border-radius: 50%;
-  filter: blur(60px);
-  opacity: 0.35;
-  animation: float 16s ease-in-out infinite;
+  filter: blur(70px);
+  opacity: 0.28;
+  animation: float 18s ease-in-out infinite;
 }
 @media (prefers-reduced-motion: reduce) { .orb { animation: none; } }
-.orb-a { width: 340px; height: 340px; background: #2563EB; top: -120px; left: -80px; }
-.orb-b { width: 300px; height: 300px; background: #7C3AED; bottom: -140px; right: -60px; animation-delay: -6s; }
-.orb-c { width: 220px; height: 220px; background: #06B6D4; top: 40%; left: 60%; animation-delay: -11s; opacity: 0.22; }
+.orb-a { width: 380px; height: 380px; background: #2563EB; top: -140px; left: -100px; }
+.orb-b { width: 340px; height: 340px; background: #7C3AED; top: 55vh; right: -100px; animation-delay: -6s; }
+.orb-c { width: 260px; height: 260px; background: #06B6D4; top: 20vh; left: 55vw; animation-delay: -11s; opacity: 0.18; }
+.orb-d { width: 300px; height: 300px; background: #2563EB; bottom: -120px; left: 30vw; animation-delay: -14s; opacity: 0.16; }
 @keyframes float {
   0%, 100% { transform: translate(0, 0) scale(1); }
-  33% { transform: translate(20px, -24px) scale(1.06); }
-  66% { transform: translate(-16px, 18px) scale(0.96); }
+  33% { transform: translate(24px, -28px) scale(1.08); }
+  66% { transform: translate(-18px, 20px) scale(0.94); }
 }
 
 .badge {
