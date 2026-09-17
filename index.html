@@ -4,28 +4,44 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Privacy Pages</title>
-<style>
-  :root { color-scheme: light dark; }
-  body { font-family: -apple-system, Segoe UI, Roboto, Arial, sans-serif; max-width: 640px; margin: 0 auto; padding: 60px 20px; text-align: center; color: #1F2937; background: #F8FAFC; }
-  @media (prefers-color-scheme: dark) { body { color: #F1F5F9; background: #0F172A; } .card { background: #1E293B !important; border-color: #334155 !important; } a.btn { background: #3B82F6 !important; } }
-  h1 { font-size: 28px; margin-bottom: 4px; }
-  .tagline { color: #6B7280; margin-bottom: 36px; }
-  .card { background: #FFFFFF; border: 1px solid #E5E7EB; border-radius: 14px; padding: 18px 20px; margin-bottom: 12px; text-align: left; display: flex; align-items: center; justify-content: space-between; }
-  a.btn { display: inline-block; background: #2563EB; color: #fff; text-decoration: none; padding: 10px 18px; border-radius: 10px; font-weight: 600; font-size: 14px; }
-  a.btn:hover { opacity: 0.9; }
-  .appname { font-weight: 700; }
-  footer { margin-top: 48px; font-size: 12px; color: #6B7280; }
-</style>
+<meta name="description" content="Privacy policies and terms of service for apps published here.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔒</text></svg>">
+<link rel="stylesheet" href="./assets/site.css">
 </head>
 <body>
-  <h1>🔒 Privacy Pages</h1>
-  <p class="tagline">Privacy policies &amp; terms of service for apps published here</p>
+  <div class="progress-bar"></div>
 
-  <div class="card">
-    <span class="appname">📱 FinCalc Pro</span>
-    <a class="btn" href="./fincalcpro/">View Pages</a>
-  </div>
+  <header class="hero">
+    <div class="hero-orbs"><span class="orb orb-a"></span><span class="orb orb-b"></span><span class="orb orb-c"></span></div>
+    <span class="badge">🔒 Privacy Pages</span>
+    <h1>Privacy &amp; terms, for every app we ship</h1>
+    <p class="lede">One trusted home for the legal pages of every app published here — reachable, HTTPS, and kept in sync with what each app actually does.</p>
+  </header>
 
-  <footer>More apps will be listed here as they're published.</footer>
+  <main class="wrap wrap-narrow">
+    <div class="grid reveal">
+      <div class="card hoverable app-card">
+        <div class="app-id">
+          <span class="app-icon">📱</span>
+          <div>
+            <div class="app-name">FinCalc Pro</div>
+            <div class="app-sub">EMI, tax &amp; salary calculator</div>
+          </div>
+        </div>
+        <a class="btn" href="./fincalcpro/">View Pages →</a>
+      </div>
+    </div>
+
+    <p class="reveal" style="color:var(--text-dim); font-size:13px; margin-top:28px; text-align:center;">
+      More apps will be listed here as they're published.
+    </p>
+
+    <footer class="site-footer" style="justify-content:center;">
+      <span>© 2026 · This domain hosts only legal/privacy pages, no user data is collected here.</span>
+    </footer>
+  </main>
+
+  <button class="to-top" aria-label="Back to top">↑</button>
+  <script src="./assets/site.js"></script>
 </body>
 </html>
