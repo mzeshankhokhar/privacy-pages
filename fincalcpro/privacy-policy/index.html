@@ -18,7 +18,7 @@
   <div class="wrap">
     <div class="doc-header">
       <h1 class="gradient-text">Privacy Policy</h1>
-      <p class="updated">FinCalc Pro · Last updated: August 22, 2026</p>
+      <p class="updated">FinCalc Pro · Last updated: September 17, 2026</p>
     </div>
 
     <div class="doc-panel"><div class="doc-layout">
@@ -26,10 +26,15 @@
         <div class="toc-label">On this page</div>
         <a href="#who-we-are">Who we are</a>
         <a href="#data-we-collect">Data we collect</a>
+        <a href="#third-party-services">Third-party services</a>
         <a href="#advertising">Advertising</a>
+        <a href="#data-retention">Data retention</a>
+        <a href="#data-security">Data security</a>
+        <a href="#your-rights">Your rights &amp; choices</a>
+        <a href="#ccpa">California privacy rights</a>
+        <a href="#international-transfers">International transfers</a>
         <a href="#no-purchases">Purchases</a>
         <a href="#childrens-privacy">Children's privacy</a>
-        <a href="#your-choices">Your choices</a>
         <a href="#disclaimer">Financial disclaimer</a>
         <a href="#changes">Changes</a>
         <a href="#contact">Contact</a>
@@ -69,8 +74,27 @@
           was ever sent to one.</p>
         </section>
 
+        <section id="third-party-services" class="reveal">
+          <h2><span class="num">3.</span> Third-party services we use</h2>
+          <p>FinCalc Pro itself has no server and no analytics of its own. It does use the following
+          third-party SDKs, each of which may independently collect information as described in their
+          own privacy policies:</p>
+          <ul>
+            <li><strong>Google Mobile Ads SDK (AdMob)</strong> — serves banner, interstitial, and
+              rewarded ads. See Section 4.</li>
+            <li><strong>Google User Messaging Platform (UMP) SDK</strong> — shows and records your
+              ad-consent choice where required (EEA, UK, Switzerland, and applicable US state privacy
+              laws), and lets you change it anytime via Settings → Ad Privacy Choices.</li>
+            <li><strong>Sentry (crash reporting) — optional, currently inactive.</strong> FinCalc Pro
+              includes the ability to enable Sentry in a future release to help diagnose crashes. If
+              and when enabled, Sentry would receive technical crash data (device model, OS version,
+              app version, and the error itself) — never your financial figures, saved history, or any
+              personal identifier. This policy will note the effective date if this is ever turned on.</li>
+          </ul>
+        </section>
+
         <section id="advertising" class="reveal">
-          <h2><span class="num">3.</span> Advertising (Google AdMob)</h2>
+          <h2><span class="num">4.</span> Advertising (Google AdMob)</h2>
           <p>
             FinCalc Pro is free to use and supported by ads served through Google AdMob (banner,
             interstitial, and rewarded ads). To do this, Google's SDK may collect and process:
@@ -90,38 +114,90 @@
           <p>
             If you are located in the European Economic Area, the UK, or Switzerland, you will be shown
             a consent screen before any personalized ads are served, letting you choose whether to allow
-            personalized advertising, per Google's EU User Consent Policy. California residents can
-            request that we not sell/share personal information via AdMob's built-in
-            "Limit Ad Tracking"/device-level ad settings.
+            personalized advertising, per Google's EU User Consent Policy. See Section 7 for how to
+            change this choice later, and Section 8 if you are a California resident.
           </p>
         </section>
 
+        <section id="data-retention" class="reveal">
+          <h2><span class="num">5.</span> Data retention</h2>
+          <p>FinCalc Pro has no server, so there is no centrally retained copy of your data. On your
+          device:</p>
+          <ul>
+            <li>Saved calculation history is kept until you delete it ("Clear All" in the History
+              screen) or uninstall the app — it does not expire automatically.</li>
+            <li>Cached tax-policy data is simply overwritten each time it refreshes; old versions are
+              not kept.</li>
+            <li>Data collected by Google AdMob/UMP (Section 4) is retained according to Google's own
+              retention policies, which we do not control — see the Google Privacy Policy linked above.</li>
+          </ul>
+        </section>
+
+        <section id="data-security" class="reveal">
+          <h2><span class="num">6.</span> Data security</h2>
+          <p>Everything you save is stored inside FinCalc Pro's private, sandboxed app storage — an
+          area the operating system (Android/iOS) isolates from other apps by design, and which is
+          removed automatically when you uninstall the app. Because this data is never transmitted
+          anywhere, there is no server for us to secure or that could be breached. We cannot control or
+          guarantee the security practices of the third-party SDKs in Section 3; refer to their own
+          policies for that.</p>
+        </section>
+
+        <section id="your-rights" class="reveal">
+          <h2><span class="num">7.</span> Your rights &amp; choices</h2>
+          <ul>
+            <li><strong>Access:</strong> everything you've saved already lives in the app itself
+              (History screen) — there's nothing held elsewhere to request a copy of.</li>
+            <li><strong>Deletion:</strong> clear your saved history anytime from the History screen
+              ("Clear All"), or uninstall the app to remove all locally stored data immediately.</li>
+            <li><strong>Withdraw or change ad consent:</strong> anytime via Settings → Ad Privacy
+              Choices in the app, or your device's own ad settings.</li>
+            <li><strong>Opt out of personalized ads:</strong> use "Limit Ad Tracking" (iOS) or "Opt out
+              of Ads Personalization" (Android) in your device settings, which AdMob honors — or manage
+              it directly at <a href="https://adssettings.google.com/" target="_blank" rel="noopener">Google
+              Ads Settings</a>.</li>
+          </ul>
+          <p>For anything Google's SDKs collect on their own behalf (Section 4), these rights are
+          exercised directly with Google, since we never receive or hold that data ourselves.</p>
+        </section>
+
+        <section id="ccpa" class="reveal">
+          <h2><span class="num">8.</span> California privacy rights (CCPA/CPRA)</h2>
+          <p>If you are a California resident, California law gives you the right to know what personal
+          information is collected, to request its deletion, and to opt out of the "sale" or "sharing"
+          of personal information — a definition broad enough to include some forms of interest-based
+          advertising. FinCalc Pro itself collects no personal information (Section 2), so in practice
+          these rights apply to what Google's AdMob SDK collects on its own behalf (Section 4). You can
+          exercise them via the in-app consent screen, Settings → Ad Privacy Choices, your device's ad
+          settings, or <a href="https://adssettings.google.com/" target="_blank" rel="noopener">Google
+          Ads Settings</a>.</p>
+        </section>
+
+        <section id="international-transfers" class="reveal">
+          <h2><span class="num">9.</span> International data transfers</h2>
+          <p>FinCalc Pro does not transfer your data internationally, because it does not transmit your
+          data anywhere in the first place. Google's advertising SDKs (Section 4) may process data on
+          servers located outside your country; see
+          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy
+          Policy</a> for how Google safeguards international transfers.</p>
+        </section>
+
         <section id="no-purchases" class="reveal">
-          <h2><span class="num">4.</span> No in-app purchases, no payment data</h2>
+          <h2><span class="num">10.</span> No in-app purchases, no payment data</h2>
           <p>FinCalc Pro does not currently sell any in-app purchase or subscription. We do not collect
           or process any payment information.</p>
         </section>
 
         <section id="childrens-privacy" class="reveal">
-          <h2><span class="num">5.</span> Children's privacy</h2>
+          <h2><span class="num">11.</span> Children's privacy</h2>
           <p>
             FinCalc Pro is not directed at children under 13 and we do not knowingly collect any
             information from children. Ads are not configured for child-directed treatment.
           </p>
         </section>
 
-        <section id="your-choices" class="reveal">
-          <h2><span class="num">6.</span> Your choices</h2>
-          <ul>
-            <li>Clear your saved history anytime from the History screen ("Clear All")</li>
-            <li>Uninstall the app to remove all locally stored data</li>
-            <li>Adjust ad personalization via your device's ad settings, or via the in-app consent
-              prompt where applicable</li>
-          </ul>
-        </section>
-
         <section id="disclaimer" class="reveal">
-          <h2><span class="num">7.</span> Financial disclaimer</h2>
+          <h2><span class="num">12.</span> Financial disclaimer</h2>
           <p>
             Calculations shown in FinCalc Pro (including tax, EMI, and salary figures) are
             <strong>estimates for informational purposes only</strong>, based on publicly available tax
@@ -132,13 +208,13 @@
         </section>
 
         <section id="changes" class="reveal">
-          <h2><span class="num">8.</span> Changes to this policy</h2>
+          <h2><span class="num">13.</span> Changes to this policy</h2>
           <p>We may update this policy as the app changes. Material changes will be reflected by
           updating the "Last updated" date above.</p>
         </section>
 
         <section id="contact" class="reveal">
-          <h2><span class="num">9.</span> Contact</h2>
+          <h2><span class="num">14.</span> Contact</h2>
           <p>Questions about this policy? Email
           <a href="mailto:mzeshankhokhar@gmail.com">mzeshankhokhar@gmail.com</a>.</p>
         </section>
