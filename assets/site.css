@@ -23,6 +23,7 @@
   --radius-md: 16px;
   --radius-lg: 22px;
   --ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --surface-glass: rgba(255, 255, 255, 0.72);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -44,12 +45,13 @@
     --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
     --shadow-md: 0 12px 32px -12px rgba(0, 0, 0, 0.55);
     --shadow-lg: 0 24px 60px -20px rgba(0, 0, 0, 0.65);
+    --surface-glass: rgba(18, 26, 46, 0.66);
   }
 }
 
 * { box-sizing: border-box; }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; overflow-x: hidden; }
 
 body {
   margin: 0;
@@ -199,7 +201,9 @@ a:hover { text-decoration: underline; }
 /* ---------- Cards / grid ---------- */
 .grid { display: grid; gap: 16px; }
 .card {
-  background: var(--surface);
+  background: var(--surface-glass);
+  backdrop-filter: blur(20px) saturate(160%);
+  -webkit-backdrop-filter: blur(20px) saturate(160%);
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
   padding: 22px;
@@ -267,6 +271,7 @@ a:hover { text-decoration: underline; }
   border-radius: var(--radius-md);
   padding: 18px 22px;
   margin: 22px 0 8px;
+  position: relative;
 }
 .notice.danger {
   background: var(--danger-soft);
@@ -277,12 +282,26 @@ a:hover { text-decoration: underline; }
 
 /* ---------- Legal document layout ---------- */
 .doc-header {
-  padding: 48px 0 8px;
+  padding: 56px 0 28px;
   animation: fadeInUp 0.6s var(--ease) both;
 }
-.doc-header h1 { font-size: 32px; font-weight: 800; letter-spacing: -0.01em; margin: 0 0 6px; }
+.doc-header h1 { font-size: 34px; font-weight: 800; letter-spacing: -0.01em; margin: 0 0 8px; }
 .doc-header .updated { color: var(--text-dim); font-size: 13px; }
 @media (prefers-reduced-motion: reduce) { .doc-header { animation: none; } }
+
+.doc-panel {
+  background: var(--surface-glass);
+  backdrop-filter: blur(28px) saturate(160%);
+  -webkit-backdrop-filter: blur(28px) saturate(160%);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  padding: 36px 36px 44px;
+  animation: fadeInUp 0.7s var(--ease) both;
+  animation-delay: 0.1s;
+}
+@media (prefers-reduced-motion: reduce) { .doc-panel { animation: none; } }
+@media (max-width: 640px) { .doc-panel { padding: 24px 18px 32px; } }
 
 .doc-layout { display: grid; grid-template-columns: 220px 1fr; gap: 40px; align-items: start; }
 @media (max-width: 760px) { .doc-layout { grid-template-columns: 1fr; } }
@@ -290,21 +309,17 @@ a:hover { text-decoration: underline; }
 .toc {
   position: sticky;
   top: 24px;
-  border-left: 2px solid var(--border);
-  padding-left: 16px;
 }
-.toc-label { font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-dim); margin-bottom: 10px; }
+.toc-label { font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-dim); margin-bottom: 10px; padding-left: 14px; }
 .toc a {
   display: block;
   font-size: 13.5px;
   color: var(--text-dim);
-  padding: 5px 0;
-  border-left: 2px solid transparent;
-  margin-left: -18px;
-  padding-left: 16px;
-  transition: color 0.2s, border-color 0.2s;
+  padding: 6px 0 6px 14px;
+  border-left: 2px solid var(--border);
+  transition: color 0.2s, border-color 0.2s, background-color 0.2s;
 }
-.toc a:hover, .toc a.active { color: var(--primary); text-decoration: none; border-left-color: var(--primary); }
+.toc a:hover, .toc a.active { color: var(--primary); text-decoration: none; border-left-color: var(--primary); background: var(--primary-soft); }
 
 @media (max-width: 760px) {
   .toc {
