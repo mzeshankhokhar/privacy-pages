@@ -1,0 +1,381 @@
+{
+  "version": "2026-27.2",
+  "updatedAt": "2026-09-12",
+  "source": "remote",
+  "countries": {
+    "PK": {
+      "name": "Pakistan",
+      "fy": "FY 2026-27 (1 Jul 2026 – 30 Jun 2027)",
+      "fyStartMonth": 7,
+      "personalAllowance": 0,
+      "cess": 1,
+      "slabs": [
+        {
+          "from": 0,
+          "upTo": 600000,
+          "rate": 0,
+          "fixedTax": 0
+        },
+        {
+          "from": 600000,
+          "upTo": 1200000,
+          "rate": 0.01,
+          "fixedTax": 0
+        },
+        {
+          "from": 1200000,
+          "upTo": 2200000,
+          "rate": 0.11,
+          "fixedTax": 6000
+        },
+        {
+          "from": 2200000,
+          "upTo": 3200000,
+          "rate": 0.2,
+          "fixedTax": 116000
+        },
+        {
+          "from": 3200000,
+          "upTo": 4100000,
+          "rate": 0.25,
+          "fixedTax": 316000
+        },
+        {
+          "from": 4100000,
+          "upTo": 5600000,
+          "rate": 0.29,
+          "fixedTax": 541000
+        },
+        {
+          "from": 5600000,
+          "upTo": 7000000,
+          "rate": 0.32,
+          "fixedTax": 976000
+        },
+        {
+          "from": 7000000,
+          "upTo": null,
+          "rate": 0.35,
+          "fixedTax": 1424000
+        }
+      ]
+    },
+    "IN": {
+      "name": "India",
+      "fy": "FY 2026-27 (AY 2027-28) — New Regime",
+      "fyStartMonth": 4,
+      "personalAllowance": 75000,
+      "cess": 1.04,
+      "rebate": {
+        "thresholdTaxable": 1200000,
+        "maxRebate": 60000
+      },
+      "slabs": [
+        {
+          "from": 0,
+          "upTo": 400000,
+          "rate": 0,
+          "fixedTax": 0
+        },
+        {
+          "from": 400000,
+          "upTo": 800000,
+          "rate": 0.05,
+          "fixedTax": 0
+        },
+        {
+          "from": 800000,
+          "upTo": 1200000,
+          "rate": 0.1,
+          "fixedTax": 20000
+        },
+        {
+          "from": 1200000,
+          "upTo": 1600000,
+          "rate": 0.15,
+          "fixedTax": 60000
+        },
+        {
+          "from": 1600000,
+          "upTo": 2000000,
+          "rate": 0.2,
+          "fixedTax": 120000
+        },
+        {
+          "from": 2000000,
+          "upTo": 2400000,
+          "rate": 0.25,
+          "fixedTax": 200000
+        },
+        {
+          "from": 2400000,
+          "upTo": null,
+          "rate": 0.3,
+          "fixedTax": 300000
+        }
+      ]
+    },
+    "AE": {
+      "name": "United Arab Emirates",
+      "fy": "2026 (No Personal Income Tax)",
+      "fyStartMonth": 1,
+      "personalAllowance": 0,
+      "cess": 1,
+      "slabs": [
+        {
+          "from": 0,
+          "upTo": null,
+          "rate": 0,
+          "fixedTax": 0
+        }
+      ]
+    },
+    "SA": {
+      "name": "Saudi Arabia",
+      "fy": "2026 (No Personal Income Tax)",
+      "fyStartMonth": 1,
+      "personalAllowance": 0,
+      "cess": 1,
+      "slabs": [
+        {
+          "from": 0,
+          "upTo": null,
+          "rate": 0,
+          "fixedTax": 0
+        }
+      ]
+    },
+    "QA": {
+      "name": "Qatar",
+      "fy": "2026 (No Personal Income Tax on Salaries)",
+      "fyStartMonth": 1,
+      "personalAllowance": 0,
+      "cess": 1,
+      "slabs": [
+        {
+          "from": 0,
+          "upTo": null,
+          "rate": 0,
+          "fixedTax": 0
+        }
+      ]
+    },
+    "US": {
+      "name": "United States",
+      "fy": "Tax Year 2026 (Single Filer, Federal)",
+      "fyStartMonth": 1,
+      "personalAllowance": 16100,
+      "cess": 1,
+      "slabs": [
+        {
+          "from": 0,
+          "upTo": 12400,
+          "rate": 0.1,
+          "fixedTax": 0
+        },
+        {
+          "from": 12400,
+          "upTo": 49840,
+          "rate": 0.12,
+          "fixedTax": 1240
+        },
+        {
+          "from": 49840,
+          "upTo": 106250,
+          "rate": 0.22,
+          "fixedTax": 5732.8
+        },
+        {
+          "from": 106250,
+          "upTo": 202850,
+          "rate": 0.24,
+          "fixedTax": 18143
+        },
+        {
+          "from": 202850,
+          "upTo": 257540,
+          "rate": 0.32,
+          "fixedTax": 41327
+        },
+        {
+          "from": 257540,
+          "upTo": 640600,
+          "rate": 0.35,
+          "fixedTax": 58827.8
+        },
+        {
+          "from": 640600,
+          "upTo": null,
+          "rate": 0.37,
+          "fixedTax": 192898.8
+        }
+      ]
+    },
+    "GB": {
+      "name": "United Kingdom",
+      "fy": "2026-27 England, Wales and Northern Ireland — income tax only",
+      "fyStartMonth": 4,
+      "personalAllowance": 12570,
+      "cess": 1,
+      "slabs": [
+        {
+          "from": 0,
+          "upTo": 37700,
+          "rate": 0.2,
+          "fixedTax": 0
+        },
+        {
+          "from": 37700,
+          "upTo": 125140,
+          "rate": 0.4,
+          "fixedTax": 7540
+        },
+        {
+          "from": 125140,
+          "upTo": null,
+          "rate": 0.45,
+          "fixedTax": 42516
+        }
+      ],
+      "allowanceTaper": {
+        "threshold": 100000,
+        "rate": 0.5
+      }
+    },
+    "CA": {
+      "name": "Canada",
+      "fy": "Tax Year 2026 (Federal Only — excl. provincial tax)",
+      "fyStartMonth": 1,
+      "personalAllowance": 0,
+      "cess": 1,
+      "slabs": [
+        {
+          "from": 0,
+          "upTo": 58523,
+          "rate": 0.14,
+          "fixedTax": 0
+        },
+        {
+          "from": 58523,
+          "upTo": 117045,
+          "rate": 0.205,
+          "fixedTax": 8193.22
+        },
+        {
+          "from": 117045,
+          "upTo": 181440,
+          "rate": 0.26,
+          "fixedTax": 20190.23
+        },
+        {
+          "from": 181440,
+          "upTo": 258482,
+          "rate": 0.29,
+          "fixedTax": 36932.93
+        },
+        {
+          "from": 258482,
+          "upTo": null,
+          "rate": 0.33,
+          "fixedTax": 59275.11
+        }
+      ],
+      "personalCredit": {
+        "maximum": 16452,
+        "minimum": 14829,
+        "taperStart": 181440,
+        "taperEnd": 258482,
+        "rate": 0.14
+      }
+    },
+    "AU": {
+      "name": "Australia",
+      "fy": "2026-27 resident base income tax only — excludes Medicare levy and offsets",
+      "fyStartMonth": 7,
+      "personalAllowance": 0,
+      "cess": 1,
+      "slabs": [
+        {
+          "from": 0,
+          "upTo": 18200,
+          "rate": 0,
+          "fixedTax": 0
+        },
+        {
+          "from": 18200,
+          "upTo": 45000,
+          "rate": 0.15,
+          "fixedTax": 0
+        },
+        {
+          "from": 45000,
+          "upTo": 135000,
+          "rate": 0.3,
+          "fixedTax": 4020
+        },
+        {
+          "from": 135000,
+          "upTo": 190000,
+          "rate": 0.37,
+          "fixedTax": 31020
+        },
+        {
+          "from": 190000,
+          "upTo": null,
+          "rate": 0.45,
+          "fixedTax": 51370
+        }
+      ]
+    },
+    "BD": {
+      "name": "Bangladesh",
+      "fy": "FY 2026-27 (AY 2026-27) — General Individual",
+      "fyStartMonth": 7,
+      "personalAllowance": 0,
+      "cess": 1,
+      "minimumTax": 5000,
+      "slabs": [
+        {
+          "from": 0,
+          "upTo": 375000,
+          "rate": 0,
+          "fixedTax": 0
+        },
+        {
+          "from": 375000,
+          "upTo": 675000,
+          "rate": 0.1,
+          "fixedTax": 0
+        },
+        {
+          "from": 675000,
+          "upTo": 1075000,
+          "rate": 0.15,
+          "fixedTax": 30000
+        },
+        {
+          "from": 1075000,
+          "upTo": 1575000,
+          "rate": 0.2,
+          "fixedTax": 90000
+        },
+        {
+          "from": 1575000,
+          "upTo": 3575000,
+          "rate": 0.25,
+          "fixedTax": 190000
+        },
+        {
+          "from": 3575000,
+          "upTo": null,
+          "rate": 0.3,
+          "fixedTax": 690000
+        }
+      ]
+    }
+  },
+  "loanEligibility": {
+    "foirRatio": 0.5
+  },
+  "schemaVersion": 2
+}
