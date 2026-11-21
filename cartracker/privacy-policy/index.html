@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Car Tracker</title>
+<meta name="description" content="Car Tracker's privacy policy — what location data the app records, where it is stored (your own Google Drive), what Google access it asks for, and how to delete everything.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔒</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <div class="page-bg"><span class="orb orb-a"></span><span class="orb orb-b"></span><span class="orb orb-c"></span><span class="orb orb-d"></span></div>
+  <div class="progress-bar"></div>
+
+  <div class="wrap">
+    <div class="doc-header">
+      <h1 class="gradient-text">Privacy Policy</h1>
+      <p class="updated">Car Tracker · Last updated: November 21, 2026</p>
+    </div>
+
+    <div class="doc-panel"><div class="doc-layout">
+      <nav class="toc reveal" aria-label="Table of contents">
+        <div class="toc-label">On this page</div>
+        <a href="#who-we-are">Who we are</a>
+        <a href="#what-the-app-does">What the app does</a>
+        <a href="#data-recorded">Data the app records</a>
+        <a href="#where-stored">Where it is stored</a>
+        <a href="#google-access">Google account access</a>
+        <a href="#limited-use">Google API data policy</a>
+        <a href="#viewer">Viewing on your phone</a>
+        <a href="#permissions">Permissions</a>
+        <a href="#third-party-services">Third-party services</a>
+        <a href="#data-retention">Data retention</a>
+        <a href="#data-security">Data security</a>
+        <a href="#your-rights">Your rights &amp; choices</a>
+        <a href="#other-drivers">Other drivers</a>
+        <a href="#ccpa">California privacy rights</a>
+        <a href="#childrens-privacy">Children's privacy</a>
+        <a href="#changes">Changes</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="doc-body">
+        <div class="notice reveal">
+          <strong>Short version:</strong> Car Tracker records your car's location so that you can see
+          it on your phone. That data goes from the car straight into a folder in <strong>your own
+          Google Drive</strong> and is read from there by your phone. We run no server, we have no
+          accounts, and we never receive, see or sell your location or any other data. There are no
+          ads and no analytics in the app.
+        </div>
+
+        <section id="who-we-are" class="reveal">
+          <h2><span class="num">1.</span> Who we are</h2>
+          <p>
+            Car Tracker is an Android app published by an independent developer. Contact:
+            <a href="mailto:mzeshankhokhar@gmail.com">mzeshankhokhar@gmail.com</a>.
+          </p>
+        </section>
+
+        <section id="what-the-app-does" class="reveal">
+          <h2><span class="num">2.</span> What the app does</h2>
+          <p>The same app runs in one of two modes, chosen when it is first opened:</p>
+          <ul>
+            <li><strong>Tracker mode</strong> — on the car's Android head unit. While the head unit is on
+              (which normally means the ignition is on), it records the car's position and uploads it
+              to your Google Drive.</li>
+            <li><strong>Viewer mode</strong> — on your phone. It reads the same Google Drive folder to
+              show the car's current position and its trip history.</li>
+          </ul>
+        </section>
+
+        <section id="data-recorded" class="reveal">
+          <h2><span class="num">3.</span> Data the app records</h2>
+          <p>In tracker mode, the app records:</p>
+          <ul>
+            <li><strong>Precise location</strong> of the head unit (latitude and longitude from its GPS),
+              about every 5–10 seconds while driving and every 30 seconds while standing with the
+              ignition on, together with GPS time, speed, direction of travel, altitude, accuracy and
+              the number of satellites</li>
+            <li><strong>Events</strong>: when the car stops and moves off, when the ignition goes on and
+              off, and when the GPS signal is lost or comes back</li>
+            <li>The <strong>vehicle name</strong> you type in the app, a random vehicle ID created by the
+              app, and the app version</li>
+          </ul>
+          <p>The app does not record anything when the head unit is switched off. It does not access
+          contacts, messages, photos, microphone or camera.</p>
+        </section>
+
+        <section id="where-stored" class="reveal">
+          <h2><span class="num">4.</span> Where the data is stored</h2>
+          <ul>
+            <li><strong>On the head unit</strong>: every record is first saved in the app's private
+              storage, so nothing is lost while there is no internet. Records already uploaded are
+              deleted from the head unit after 30 days.</li>
+            <li><strong>In your Google Drive</strong>: the app uploads the records into a folder named
+              <code>CarTracker</code> in the Google account you sign in with — a file with the car's
+              latest position (<code>live.json</code>) and compressed history files, one folder per
+              day.</li>
+          </ul>
+          <p>The data travels directly between your devices and Google Drive over encrypted HTTPS. It
+          never passes through a server of ours, and we have no access to your Drive.</p>
+        </section>
+
+        <section id="google-access" class="reveal">
+          <h2><span class="num">5.</span> Google account access</h2>
+          <p>To use Google Drive, the app asks you to sign in with Google and grant only these
+          permissions:</p>
+          <ul>
+            <li><strong>Google Drive — only files created by this app</strong>
+              (<code>https://www.googleapis.com/auth/drive.file</code>). The app can create and read
+              the files it made itself; it cannot see or change any of your other Drive files.</li>
+            <li><strong>Your email address</strong> (<code>openid</code>, <code>email</code>), only to
+              show on screen which account is signed in.</li>
+          </ul>
+          <p>The sign-in token that lets the app upload is stored on the device, encrypted with the
+          Android Keystore, and is used only to talk to Google Drive.</p>
+        </section>
+
+        <section id="limited-use" class="reveal">
+          <h2><span class="num">6.</span> Google API Services User Data Policy</h2>
+          <p>Car Tracker's use and transfer of information received from Google APIs adheres to the
+          <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google
+          API Services User Data Policy</a>, including the Limited Use requirements. Data from Google
+          APIs is used only to provide the tracking and viewing features described here; it is not
+          transferred to anyone else, not used for advertising, and not read by humans.</p>
+        </section>
+
+        <section id="viewer" class="reveal">
+          <h2><span class="num">7.</span> Viewing on your phone</h2>
+          <ul>
+            <li>The viewer downloads the car's files from your Google Drive and keeps copies of the
+              history files in the app's private cache, so they open faster next time.</li>
+            <li><strong>Street address</strong>: to show the address of the car's position, the viewer
+              uses Android's built-in Geocoder, which sends the coordinates to your phone's location
+              service provider (normally Google).</li>
+            <li><strong>Map</strong>: map images come from OpenFreeMap. To draw the map, your phone
+              requests the map tiles for the area on screen, so that service sees your IP address and
+              which map area is being viewed — not who you are or which car it is.</li>
+            <li><strong>Directions in Google Maps</strong>: only if you tap this button, the car's
+              position is passed to the Google Maps app on your phone.</li>
+          </ul>
+        </section>
+
+        <section id="permissions" class="reveal">
+          <h2><span class="num">8.</span> Permissions the app requests</h2>
+          <ul>
+            <li><strong>Precise location, including "allow all the time"</strong> (tracker mode) — to
+              record the car's position while another app is on the head unit's screen.</li>
+            <li><strong>Foreground service and notifications</strong> — to keep recording, with a visible
+              "Tracking" notice.</li>
+            <li><strong>Start at boot</strong> and <strong>ignore battery optimisations</strong> — so
+              recording starts by itself when the head unit powers on and is not stopped by the
+              system.</li>
+            <li><strong>Internet and network state</strong> — to upload to and read from Google Drive,
+              and to know when the internet is back.</li>
+            <li><strong>Wake lock</strong> — to finish saving and uploading for a few seconds after the
+              ignition is turned off.</li>
+          </ul>
+        </section>
+
+        <section id="third-party-services" class="reveal">
+          <h2><span class="num">9.</span> Third-party services</h2>
+          <ul>
+            <li><strong>Google Sign-In and Google Drive</strong> — storage of your data in your own
+              account. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's
+              privacy policy</a>.</li>
+            <li><strong>OpenFreeMap</strong> (OpenStreetMap data) — map images in the viewer.
+              <a href="https://openfreemap.org/" target="_blank" rel="noopener">openfreemap.org</a>.</li>
+            <li><strong>Android Geocoder</strong> — street addresses in the viewer, provided by your
+              phone's location service.</li>
+          </ul>
+          <p>There is no advertising, analytics or crash-reporting SDK in the app.</p>
+        </section>
+
+        <section id="data-retention" class="reveal">
+          <h2><span class="num">10.</span> Data retention</h2>
+          <p>Files in your Google Drive stay there until you delete them. On the head unit, uploaded
+          records are deleted after 30 days; records not yet uploaded are kept until they can be
+          uploaded. Uninstalling the app removes everything it stored on that device.</p>
+        </section>
+
+        <section id="data-security" class="reveal">
+          <h2><span class="num">11.</span> Data security</h2>
+          <p>Data on the devices is kept in Android's private, per-app storage. Uploads and downloads
+          use encrypted HTTPS connections to Google. The sign-in token is encrypted with the Android
+          Keystore. Access to the Drive files is protected by your Google account.</p>
+        </section>
+
+        <section id="your-rights" class="reveal">
+          <h2><span class="num">12.</span> Your rights &amp; choices</h2>
+          <ul>
+            <li><strong>Stop recording</strong>: use <em>Pause tracking</em> in the app on the head unit,
+              or uninstall it.</li>
+            <li><strong>Stop uploading</strong>: tap <em>Sign out</em> in the app. This also cancels the
+              app's access token.</li>
+            <li><strong>Remove the app's access</strong> to your Google account at any time at
+              <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a>.</li>
+            <li><strong>Delete the data</strong>: delete the <code>CarTracker</code> folder in Google Drive,
+              and uninstall the app (or clear its storage) on the head unit and the phone.</li>
+          </ul>
+        </section>
+
+        <section id="other-drivers" class="reveal">
+          <h2><span class="num">13.</span> Other drivers</h2>
+          <p>Car Tracker records where the car goes, whoever is driving. If other people drive a car with
+          the app installed, please tell them that the car's location is recorded. Use the app only for
+          vehicles you own or are allowed to track.</p>
+        </section>
+
+        <section id="ccpa" class="reveal">
+          <h2><span class="num">14.</span> California privacy rights</h2>
+          <p>We do not sell or share personal information as those terms are defined by the CCPA/CPRA.
+          We do not receive your data at all; it stays in your own Google account and on your own
+          devices, under your control.</p>
+        </section>
+
+        <section id="childrens-privacy" class="reveal">
+          <h2><span class="num">15.</span> Children's privacy</h2>
+          <p>Car Tracker is not directed at children under 13, and we do not knowingly collect personal
+          information from children.</p>
+        </section>
+
+        <section id="changes" class="reveal">
+          <h2><span class="num">16.</span> Changes</h2>
+          <p>If this policy changes, the updated version will be posted at this address with a new
+          date at the top.</p>
+        </section>
+
+        <section id="contact" class="reveal">
+          <h2><span class="num">17.</span> Contact</h2>
+          <p>Questions about this policy can be sent to
+          <a href="mailto:mzeshankhokhar@gmail.com">mzeshankhokhar@gmail.com</a>.</p>
+        </section>
+
+        <footer class="site-footer">
+          <a class="btn btn-secondary" href="../">← Back to Car Tracker</a>
+          <span>© 2026 Car Tracker</span>
+        </footer>
+      </div>
+    </div></div>
+  </div>
+
+  <button class="to-top" aria-label="Back to top">↑</button>
+  <script src="../../assets/site.js"></script>
+</body>
+</html>
